@@ -1,9 +1,11 @@
 body {
-    background-color: red;
-    color: white;
+    background-color: #fafafa;
+    color: #333;
     h1 {
         font-size: 5rem;
         display: flex;
+        justify-content: center;
         user-select: none;
+        transform: rotate(60deg);
     }
 }

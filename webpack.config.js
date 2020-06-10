@@ -13,6 +13,10 @@ module.exports = {
         filename: 'js/bundle.min.js',
         path: path.resolve(__dirname, 'dist'),
     },
+     // To Prevent minimize js files set to false
+    // optimization: {
+    //     minimize: false
+    // },
     module: {
         rules: [
             { // Babel Transpiler for ES6 Syntax && New Features
@@ -70,7 +74,7 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
         compress: true,
-        port: 5555,
+        port: 5000,
         open: true
     }
 
