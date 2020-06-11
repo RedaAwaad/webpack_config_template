@@ -1,11 +1,34 @@
 body {
-    background-color: #fafafa;
-    color: #333;
+    background: rgb(255,40,140);
+    background: linear-gradient( rgb(255,40,140) 60px, #fafafa 50px);
+    color: rgb(255,40,140);
+    height: 91.9vh;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     h1 {
         font-size: 5rem;
         display: flex;
         justify-content: center;
-        user-select: none;
-        transform: rotate(60deg);
     }
+
+    input::placeholder {
+        color: green;
+    }
+
+    @media (min-resolution: 2dppx) {
+        .image {
+          background-image: linear-gradient( rgb(255,40,140) 60px, #fafafa 50px);
+        }
+      }
+
+      a {
+        transform: scale(0.5);
+      }
 }
+
+.autoplacement-example {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+  }
